@@ -18,6 +18,7 @@ struct RockPaperAndScissor: View {
     
     @State private var result = ""
     @State private var showingResult = false
+    @State private var showingEndGameResult = false
     
     private var correctAnswer: Int {
         winOrLose ? (currentChoiceApp + 2) % 3 : (currentChoiceApp + 1) % 3
@@ -63,16 +64,24 @@ struct RockPaperAndScissor: View {
                         HStack(spacing: 60) {
                             ForEach(0 ..< 3) { item in
                                 Button {
-                                    if item == correctAnswer {
+                                    if questionCount == 10 {
+                                        playerScore += 1
+                                        result = "Поздравляем, твой счёт \(playerScore)"
+                                        showingEndGameResult = true
+                                    }
+                                    else if item == correctAnswer {
                                         playerScore += 1
                                         result = "Правильно"
+                                        questionCount += 1
+                                        showingResult = true
                                     } else {
                                         if playerScore > 0 {
                                             playerScore -= 1
                                         }
                                         result = "Неправильно"
+                                        questionCount += 1
+                                        showingResult = true
                                     }
-                                    showingResult = true
                                 } label: {
                                     Text("\(possobleMoves[item])")
                                         .font(.largeTitle)
@@ -88,9 +97,10 @@ struct RockPaperAndScissor: View {
                     Spacer()
                 }
                 .alert(result, isPresented: $showingResult) {
-                    Button("Продолжить") {
-                        continueGame()
-                    }
+                    Button("Продолжить", action: continueGame)
+                }
+                .alert(result, isPresented: $showingEndGameResult) {
+                    Button("Перезапустить игру", action: restartGame)
                 }
             }
         }
@@ -98,9 +108,17 @@ struct RockPaperAndScissor: View {
         .navigationBarTitleDisplayMode(.inline)
     }
     
+    func restartGame() {
+        continueGame()
+        playerScore = 0
+        questionCount = 1
+    }
+    
     func continueGame() {
-        currentChoiceApp = Int.random(in: 0 ..< 3)
-        winOrLose = Bool.random()
+        withAnimation {
+            currentChoiceApp = Int.random(in: 0 ..< 3)
+            winOrLose = Bool.random()
+        }
     }
 }
 

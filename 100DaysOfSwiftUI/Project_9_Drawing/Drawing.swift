@@ -143,16 +143,16 @@ struct Drawing: View {
                     .padding(.horizontal, 30)
                 }
             }
-            .toolbar() {
-                Button {
-                    show.toggle()
-                } label: {
-                    Text("Стрелка или градиентный круг")
-                }
-            }
         }
         .navigationTitle("Drawing")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar() {
+            Button {
+                show.toggle()
+            } label: {
+                Text("Стрелка или градиентный круг")
+            }
+        }
     }
 }
 

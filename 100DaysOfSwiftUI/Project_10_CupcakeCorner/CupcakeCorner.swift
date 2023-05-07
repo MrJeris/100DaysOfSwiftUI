@@ -8,32 +8,32 @@
 import SwiftUI
 
 struct CupcakeCorner: View {
-    @StateObject var order = Order()
+    @StateObject var orderProvider = OrderProvider()
     
     var body: some View {
         Form {
             Section {
-                Picker("Select your cake type", selection: $order.type) {
+                Picker("Select your cake type", selection: $orderProvider.order.type) {
                     ForEach(Order.types.indices) {
                         Text(Order.types[$0])
                     }
                 }
                 
-                Stepper("Number of cakes: \(order.quantity)", value: $order.quantity, in: 3...20)
+                Stepper("Number of cakes: \(orderProvider.order.quantity)", value: $orderProvider.order.quantity, in: 3...20)
             }
             
             Section {
-                Toggle("Any special requests?", isOn: $order.specialRequestEnabled.animation())
+                Toggle("Any special requests?", isOn: $orderProvider.order.specialRequestEnabled.animation())
                 
-                if order.specialRequestEnabled {
-                    Toggle("Add extra frosting", isOn: $order.extraFrosting)
-                    Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
+                if orderProvider.order.specialRequestEnabled {
+                    Toggle("Add extra frosting", isOn: $orderProvider.order.extraFrosting)
+                    Toggle("Add extra sprinkles", isOn: $orderProvider.order.addSprinkles)
                 }
             }
             
             Section {
                 NavigationLink {
-                    AddressView(order: order)
+                    AddressView(orderProvider: orderProvider)
                 } label: {
                     Text("Delivery details")
                 }

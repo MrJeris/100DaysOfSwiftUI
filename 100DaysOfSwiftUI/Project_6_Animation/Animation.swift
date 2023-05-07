@@ -30,27 +30,25 @@ struct Animation: View {
     @State private var isShowingRed = false
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 50) {
-                ZStack {
+        VStack(spacing: 50) {
+            ZStack {
+                Rectangle()
+                    .fill(.blue)
+                    .frame(width: 200, height: 200)
+                
+                if isShowingRed {
                     Rectangle()
-                        .fill(.blue)
+                        .fill(.red)
                         .frame(width: 200, height: 200)
-                    
-                    if isShowingRed {
-                        Rectangle()
-                            .fill(.red)
-                            .frame(width: 200, height: 200)
-                            .transition(.pivot)
-                    }
+                        .transition(.pivot)
                 }
-                .onTapGesture {
-                    withAnimation {
-                        isShowingRed.toggle()
-                    }
-                }
-                NavigationLink("Challenge: Guess the Flag add some animation", destination: GuessTheFlag())
             }
+            .onTapGesture {
+                withAnimation {
+                    isShowingRed.toggle()
+                }
+            }
+            NavigationLink("Challenge: Guess the Flag add some animation", destination: GuessTheFlag())
         }
         .navigationTitle("Animation")
         .navigationBarTitleDisplayMode(.inline)
@@ -59,6 +57,8 @@ struct Animation: View {
 
 struct Animation_Previews: PreviewProvider {
     static var previews: some View {
-        Animation()
+        NavigationView {
+            Animation()
+        }
     }
 }

@@ -25,83 +25,81 @@ struct RockPaperAndScissor: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                LinearGradient(colors: [Color(red: 245 / 255, green: 245 / 255 , blue: 220 / 255),
-                                        .mint], startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
+        ZStack {
+            LinearGradient(colors: [Color(red: 245 / 255, green: 245 / 255 , blue: 220 / 255),
+                                    .mint], startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
+            
+            VStack (spacing: 20) {
+                Spacer()
                 
-                VStack (spacing: 20) {
-                    Spacer()
-                    
-                    Text("Ваш счёт: \(playerScore)")
-                        .font(.title)
-                        .bold()
-                        .foregroundColor(.black)
-                    
-                    Spacer()
-                    
-                    VStack(spacing: 20) {
-                        HStack {
-                            Text("Компьютер выбрал")
-                                .font(.title)
-                            Text(possobleMoves[currentChoiceApp])
-                                .font(.largeTitle)
-                        }
-                        
-                        
-                        Text("Вы должны \(winOrLose ? "выиграть" : "проиграть")")
-                            .font(.headline.bold())
-                            .padding(10)
-                            .overlay(RoundedRectangle(cornerRadius: 16).stroke(.regularMaterial, lineWidth: 5))
+                Text("Ваш счёт: \(playerScore)")
+                    .font(.title)
+                    .bold()
+                    .foregroundColor(.black)
+                
+                Spacer()
+                
+                VStack(spacing: 20) {
+                    HStack {
+                        Text("Компьютер выбрал")
+                            .font(.title)
+                        Text(possobleMoves[currentChoiceApp])
+                            .font(.largeTitle)
                     }
                     
-                    VStack {
-                        Text("Что вы выберите?")
-                            .font(.title.bold())
-                            .foregroundColor(.white)
-                            .padding()
-                        HStack(spacing: 60) {
-                            ForEach(0 ..< 3) { item in
-                                Button {
-                                    if questionCount == 10 {
-                                        playerScore += 1
-                                        result = "Поздравляем, твой счёт \(playerScore)"
-                                        showingEndGameResult = true
-                                    }
-                                    else if item == correctAnswer {
-                                        playerScore += 1
-                                        result = "Правильно"
-                                        questionCount += 1
-                                        showingResult = true
-                                    } else {
-                                        if playerScore > 0 {
-                                            playerScore -= 1
-                                        }
-                                        result = "Неправильно"
-                                        questionCount += 1
-                                        showingResult = true
-                                    }
-                                } label: {
-                                    Text("\(possobleMoves[item])")
-                                        .font(.largeTitle)
+                    
+                    Text("Вы должны \(winOrLose ? "выиграть" : "проиграть")")
+                        .font(.headline.bold())
+                        .padding(10)
+                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(.regularMaterial, lineWidth: 5))
+                }
+                
+                VStack {
+                    Text("Что вы выберите?")
+                        .font(.title.bold())
+                        .foregroundColor(.white)
+                        .padding()
+                    HStack(spacing: 60) {
+                        ForEach(0 ..< 3) { item in
+                            Button {
+                                if questionCount == 10 {
+                                    playerScore += 1
+                                    result = "Поздравляем, твой счёт \(playerScore)"
+                                    showingEndGameResult = true
                                 }
+                                else if item == correctAnswer {
+                                    playerScore += 1
+                                    result = "Правильно"
+                                    questionCount += 1
+                                    showingResult = true
+                                } else {
+                                    if playerScore > 0 {
+                                        playerScore -= 1
+                                    }
+                                    result = "Неправильно"
+                                    questionCount += 1
+                                    showingResult = true
+                                }
+                            } label: {
+                                Text("\(possobleMoves[item])")
+                                    .font(.largeTitle)
                             }
                         }
-                        .padding()
                     }
-                    .background(.secondary)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    
-                    Spacer()
-                    Spacer()
+                    .padding()
                 }
-                .alert(result, isPresented: $showingResult) {
-                    Button("Продолжить", action: continueGame)
-                }
-                .alert(result, isPresented: $showingEndGameResult) {
-                    Button("Перезапустить игру", action: restartGame)
-                }
+                .background(.secondary)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                
+                Spacer()
+                Spacer()
+            }
+            .alert(result, isPresented: $showingResult) {
+                Button("Продолжить", action: continueGame)
+            }
+            .alert(result, isPresented: $showingEndGameResult) {
+                Button("Перезапустить игру", action: restartGame)
             }
         }
         .navigationTitle("Rock Paper and Scissor")
@@ -124,6 +122,8 @@ struct RockPaperAndScissor: View {
 
 struct RockPaperAndScissor_Previews: PreviewProvider {
     static var previews: some View {
-        RockPaperAndScissor()
+        NavigationView {
+            RockPaperAndScissor()
+        }
     }
 }

@@ -124,6 +124,8 @@ struct GuessTheFlag: View {
 
 struct GuessTheFlag_Previews: PreviewProvider {
     static var previews: some View {
-        GuessTheFlag()
+        NavigationView {
+            GuessTheFlag()
+        }
     }
 }

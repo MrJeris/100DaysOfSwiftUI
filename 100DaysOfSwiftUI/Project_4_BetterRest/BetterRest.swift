@@ -25,37 +25,35 @@ struct BetterRest: View {
     }
     
     var body: some View {
-        NavigationView {
-            Form {
-                Section {
-                    DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
-                        .labelsHidden()
-                } header: {
-                    Text("When do you want to wake up?")
-                        .font(.headline)
-                }
-                
-                Section {
-                    Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
-                } header: {
-                    Text("Desired amount of sleep")
-                        .font(.headline)
-                }
-                
-                Section {
-                    Picker("\(coffeeAmount) cups", selection: $coffeeAmount) {
-                        ForEach(0..<21) {
-                            Text("\($0)")
-                        }
-                    }
-                } header: {
-                    Text("Daily coffee intake")
-                        .font(.headline)
-                }
-                
-                Text("Your ideal bedtime is \(calculateBedtime())")
-                    .font(.title)
+        Form {
+            Section {
+                DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+            } header: {
+                Text("When do you want to wake up?")
+                    .font(.headline)
             }
+            
+            Section {
+                Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
+            } header: {
+                Text("Desired amount of sleep")
+                    .font(.headline)
+            }
+            
+            Section {
+                Picker("\(coffeeAmount) cups", selection: $coffeeAmount) {
+                    ForEach(0..<21) {
+                        Text("\($0)")
+                    }
+                }
+            } header: {
+                Text("Daily coffee intake")
+                    .font(.headline)
+            }
+            
+            Text("Your ideal bedtime is \(calculateBedtime())")
+                .font(.title)
         }
         .navigationTitle("BetterRest")
         .navigationBarTitleDisplayMode(.inline)
@@ -82,6 +80,8 @@ struct BetterRest: View {
 
 struct BetterRest_Previews: PreviewProvider {
     static var previews: some View {
-        BetterRest()
+        NavigationView {
+            BetterRest()
+        }
     }
 }

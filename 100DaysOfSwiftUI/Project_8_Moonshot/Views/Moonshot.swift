@@ -18,23 +18,21 @@ struct Moonshot: View {
     @AppStorage("showingGrid") private var showingGrid = false
     
     var body: some View {
-        NavigationView {
-            Group {
-                if showingGrid {
-                    GridLayout(astronauts: astronauts, missions: missions)
-                } else {
-                    ListLayout(astronauts: astronauts, missions: missions)
-                }
+        Group {
+            if showingGrid {
+                GridLayout(astronauts: astronauts, missions: missions)
+            } else {
+                ListLayout(astronauts: astronauts, missions: missions)
             }
-            .toolbar {
-                Button {
-                    showingGrid.toggle()
-                } label: {
-                    if showingGrid {
-                        Label("Show as table", systemImage: "list.dash")
-                    } else {
-                        Label("Show as grid", systemImage: "square.grid.2x2")
-                    }
+        }
+        .toolbar {
+            Button {
+                showingGrid.toggle()
+            } label: {
+                if showingGrid {
+                    Label("Show as table", systemImage: "list.dash")
+                } else {
+                    Label("Show as grid", systemImage: "square.grid.2x2")
                 }
             }
             .background(.darkBackground)
@@ -47,7 +45,9 @@ struct Moonshot: View {
 
 struct Moonshot_Previews: PreviewProvider {
     static var previews: some View {
-        Moonshot(astronauts: Bundle.main.decode("astronauts.json"), missions: Bundle.main.decode("missions.json"))
-            .preferredColorScheme(.dark)
+        NavigationView {
+            Moonshot(astronauts: Bundle.main.decode("astronauts.json"), missions: Bundle.main.decode("missions.json"))
+                .preferredColorScheme(.dark)
+        }
     }
 }

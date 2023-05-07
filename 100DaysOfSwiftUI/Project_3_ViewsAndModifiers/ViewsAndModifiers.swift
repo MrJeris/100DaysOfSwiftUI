@@ -23,19 +23,17 @@ extension View {
 
 struct ViewsAndModifiers: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer()
-                
-                Section {
-                    Text("Defaul text")
-                    Text("Text with custom modification")
-                        .largeBlue()
-                }
-                
-                Spacer()
-                Spacer()
+        VStack {
+            Spacer()
+            
+            Section {
+                Text("Defaul text")
+                Text("Text with custom modification")
+                    .largeBlue()
             }
+            
+            Spacer()
+            Spacer()
         }
         .navigationTitle("ViewsAndModifiers")
         .navigationBarTitleDisplayMode(.inline)
@@ -44,6 +42,8 @@ struct ViewsAndModifiers: View {
 
 struct ViewsAndModifiers_Previews: PreviewProvider {
     static var previews: some View {
-        ViewsAndModifiers()
+        NavigationView {
+            ViewsAndModifiers()
+        }
     }
 }

@@ -12,32 +12,32 @@ struct HabitListView: View {
     @State private var showingCreateView = false
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach($habits.habitItems) { $item in
-                    NavigationLink(item.title) {
-                        HabitDetailView(habitItem: $item)
-                    }
-                }
-                .onDelete(perform: habits.deleteHabit)
-            }
-            .toolbar{
-                Button {
-                    showingCreateView = true
-                } label: {
-                    Image(systemName: "plus")
+        List {
+            ForEach($habits.habitItems) { $item in
+                NavigationLink(item.title) {
+                    HabitDetailView(habitItem: $item)
                 }
             }
-            .sheet(isPresented: $showingCreateView) {
-                HabitCreateView(habitsItems: habits)
-            }
-            .navigationTitle("Habit-Tracking")
+            .onDelete(perform: habits.deleteHabit)
         }
+        .toolbar{
+            Button {
+                showingCreateView = true
+            } label: {
+                Image(systemName: "plus")
+            }
+        }
+        .sheet(isPresented: $showingCreateView) {
+            HabitCreateView(habitsItems: habits)
+        }
+        .navigationTitle("Habit-Tracking")
     }
 }
 
 struct HabitListView_Previews: PreviewProvider {
     static var previews: some View {
-        HabitListView(habits: HabitListViewModel())
+        NavigationView {
+            HabitListView(habits: HabitListViewModel())
+        }
     }
 }

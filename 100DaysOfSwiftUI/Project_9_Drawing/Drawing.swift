@@ -91,57 +91,55 @@ struct Drawing: View {
     @State private var gradientEndY = 1.0
     
     var body: some View {
-        NavigationView {
-            Group {
-                if show {
-                    Arrow(headHeight: headHeight, shaflWidth: shaflWidth)
-                        .fill(Color(hue: color, saturation: 1, brightness: 1))
-                        .onTapGesture {
-                            withAnimation {
-                                headHeight = Double.random(in: 0.2...0.8)
-                                shaflWidth = Double.random(in: 0.2...0.8)
-                                color = Double.random(in: 0...1)
-                            }
-                        }
-                        .padding(30)
-                } else {
-                    VStack(spacing: 30) {
-                        ColorCyclingRectangle(
-                            amount: colorCycle,
-                            gradientStartX: gradientStartX,
-                            gradientStartY: gradientStartY,
-                            gradientEndX: gradientEndX,
-                            gradientEndY: gradientEndY
-                        )
-                        .frame(width: 300, height: 300)
-                        
-                        HStack {
-                            Text("Color")
-                            Slider(value: $colorCycle)
-                        }
-                        
-                        HStack {
-                            Text("Start X")
-                            Slider(value: $gradientStartX)
-                        }
-                        
-                        HStack {
-                            Text("Start Y")
-                            Slider(value: $gradientStartY)
-                        }
-                        
-                        HStack {
-                            Text("End X")
-                            Slider(value: $gradientEndX)
-                        }
-                        
-                        HStack {
-                            Text("End Y")
-                            Slider(value: $gradientEndY)
+        Group {
+            if show {
+                Arrow(headHeight: headHeight, shaflWidth: shaflWidth)
+                    .fill(Color(hue: color, saturation: 1, brightness: 1))
+                    .onTapGesture {
+                        withAnimation {
+                            headHeight = Double.random(in: 0.2...0.8)
+                            shaflWidth = Double.random(in: 0.2...0.8)
+                            color = Double.random(in: 0...1)
                         }
                     }
-                    .padding(.horizontal, 30)
+                    .padding(30)
+            } else {
+                VStack(spacing: 30) {
+                    ColorCyclingRectangle(
+                        amount: colorCycle,
+                        gradientStartX: gradientStartX,
+                        gradientStartY: gradientStartY,
+                        gradientEndX: gradientEndX,
+                        gradientEndY: gradientEndY
+                    )
+                    .frame(width: 300, height: 300)
+                    
+                    HStack {
+                        Text("Color")
+                        Slider(value: $colorCycle)
+                    }
+                    
+                    HStack {
+                        Text("Start X")
+                        Slider(value: $gradientStartX)
+                    }
+                    
+                    HStack {
+                        Text("Start Y")
+                        Slider(value: $gradientStartY)
+                    }
+                    
+                    HStack {
+                        Text("End X")
+                        Slider(value: $gradientEndX)
+                    }
+                    
+                    HStack {
+                        Text("End Y")
+                        Slider(value: $gradientEndY)
+                    }
                 }
+                .padding(.horizontal, 30)
             }
         }
         .navigationTitle("Drawing")
@@ -150,7 +148,7 @@ struct Drawing: View {
             Button {
                 show.toggle()
             } label: {
-                Text("Стрелка или градиентный круг")
+                Text("Array/Rectangle")
             }
         }
     }
@@ -158,6 +156,8 @@ struct Drawing: View {
 
 struct Drawing_Previews: PreviewProvider {
     static var previews: some View {
-        Drawing()
+        NavigationView {
+            Drawing()
+        }
     }
 }

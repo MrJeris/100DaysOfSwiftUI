@@ -12,22 +12,20 @@ struct iExpenseView: View {
     @State private var showingAddExpense = false
     
     var body: some View {
-        NavigationView {
-            List {
-                ExpenseSection(title: "Business", expenses: expenses.businessItems, deleteItems: removeBusinessItems)
-                
-                ExpenseSection(title: "Personal", expenses: expenses.personalItems, deleteItems: removePersonalItems)
+        List {
+            ExpenseSection(title: "Business", expenses: expenses.businessItems, deleteItems: removeBusinessItems)
+            
+            ExpenseSection(title: "Personal", expenses: expenses.personalItems, deleteItems: removePersonalItems)
+        }
+        .toolbar {
+            Button {
+                showingAddExpense = true
+            } label: {
+                Image(systemName: "plus")
             }
-            .toolbar {
-                Button {
-                    showingAddExpense = true
-                } label: {
-                    Image(systemName: "plus")
-                }
-            }
-            .sheet(isPresented: $showingAddExpense) {
-                AddView(expenses: expenses)
-            }
+        }
+        .sheet(isPresented: $showingAddExpense) {
+            AddView(expenses: expenses)
         }
         .navigationTitle("iExpense")
         .navigationBarTitleDisplayMode(.inline)
@@ -58,6 +56,8 @@ struct iExpenseView: View {
 
 struct iExpenseView_Previews: PreviewProvider {
     static var previews: some View {
-        iExpenseView()
+        NavigationView {
+            iExpenseView()
+        }
     }
 }

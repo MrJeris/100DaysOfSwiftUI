@@ -17,7 +17,8 @@ struct ContentView: View {
         AnyView(Animation()),
         AnyView(iExpenseView()),
         AnyView(Moonshot(astronauts: Bundle.main.decode("astronauts.json"), missions: Bundle.main.decode("missions.json"))),
-        AnyView(Drawing())
+        AnyView(Drawing()),
+        AnyView(CupcakeCorner())
     ]
     
     let milestone: [AnyView] = [
@@ -41,7 +42,6 @@ struct ContentView: View {
                             .font(.headline)
                     }
                         
-                    
                     Text("Milestone Projects")
                         .font(.title)
                         .fontWeight(.medium)
@@ -55,14 +55,13 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .background(LinearGradient(colors: [Color(red: 245 / 255, green: 245 / 255 , blue: 220 / 255),
-                                                .mint],
-                                       startPoint: .top,
-                                       endPoint: .bottom))
+            .background(LinearGradient(colors: [Color(red: 245 / 255, green: 245 / 255 , blue: 220 / 255), .mint], startPoint: .top, endPoint: .bottom))
             .navigationTitle("100 Days of SwiftUI")
         }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

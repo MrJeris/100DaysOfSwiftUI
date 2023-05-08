@@ -18,7 +18,8 @@ struct ContentView: View {
         AnyView(iExpenseView()),
         AnyView(Moonshot(astronauts: Bundle.main.decode("astronauts.json"), missions: Bundle.main.decode("missions.json"))),
         AnyView(Drawing()),
-        AnyView(CupcakeCorner())
+        AnyView(CupcakeCorner()),
+        AnyView(Bookworm())
     ]
     
     let milestone: [AnyView] = [

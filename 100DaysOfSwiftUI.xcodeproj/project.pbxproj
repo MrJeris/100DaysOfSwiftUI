@@ -67,6 +67,11 @@
 		8DAEEAF92A0BAB970080CDBC /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAF82A0BAB970080CDBC /* FilteredList.swift */; };
 		8DAEEB032A0BAC370080CDBC /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB012A0BAC370080CDBC /* Singer+CoreDataClass.swift */; };
 		8DAEEB042A0BAC370080CDBC /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB022A0BAC370080CDBC /* Singer+CoreDataProperties.swift */; };
+		8DAEEB0A2A0BBB060080CDBC /* FriendFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB092A0BBB060080CDBC /* FriendFace.swift */; };
+		8DAEEB0D2A0BBC590080CDBC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB0C2A0BBC590080CDBC /* UserModel.swift */; };
+		8DAEEB0F2A0BBC670080CDBC /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB0E2A0BBC670080CDBC /* FriendModel.swift */; };
+		8DAEEB152A0BD0BC0080CDBC /* FriendFaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB142A0BD0BC0080CDBC /* FriendFaceDetailView.swift */; };
+		8DAEEB182A0BF80E0080CDBC /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 8DAEEB172A0BF80E0080CDBC /* WrappingHStack */; };
 		8DD2E87D2A081824000A7338 /* Bookworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E87C2A081824000A7338 /* Bookworm.swift */; };
 		8DD2E8822A0933AE000A7338 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E8812A0933AE000A7338 /* DataController.swift */; };
 		8DD2E8882A09555C000A7338 /* BookwormData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E8862A09555C000A7338 /* BookwormData.xcdatamodeld */; };
@@ -140,6 +145,10 @@
 		8DAEEB002A0BABF00080CDBC /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8DAEEB012A0BAC370080CDBC /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8DAEEB022A0BAC370080CDBC /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8DAEEB092A0BBB060080CDBC /* FriendFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFace.swift; sourceTree = "<group>"; };
+		8DAEEB0C2A0BBC590080CDBC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8DAEEB0E2A0BBC670080CDBC /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		8DAEEB142A0BD0BC0080CDBC /* FriendFaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceDetailView.swift; sourceTree = "<group>"; };
 		8DD2E87C2A081824000A7338 /* Bookworm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookworm.swift; sourceTree = "<group>"; };
 		8DD2E8812A0933AE000A7338 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		8DD2E8872A09555C000A7338 /* BookwormData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookwormData.xcdatamodel; sourceTree = "<group>"; };
@@ -154,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DAEEB182A0BF80E0080CDBC /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +246,7 @@
 		8D6D3E6D29FE76A60055BCCE /* 100DaysOfSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8DAEEB082A0BBABF0080CDBC /* MilestoneProject 10-12 FriendFace */,
 				8D6D3E8729FE76CA0055BCCE /* MilestoneProject 7-9 Habit-Tracking */,
 				8D6D3E8629FE76C80055BCCE /* MilestoneProject 4-6 Edutainment */,
 				8D6D3E8529FE76C70055BCCE /* MilestoneProject 1-3 RockPaperAndScissor */,
@@ -486,6 +497,25 @@
 			path = NSManagedObject_Subclasses;
 			sourceTree = "<group>";
 		};
+		8DAEEB082A0BBABF0080CDBC /* MilestoneProject 10-12 FriendFace */ = {
+			isa = PBXGroup;
+			children = (
+				8DAEEB0B2A0BBC460080CDBC /* Models */,
+				8DAEEB142A0BD0BC0080CDBC /* FriendFaceDetailView.swift */,
+				8DAEEB092A0BBB060080CDBC /* FriendFace.swift */,
+			);
+			path = "MilestoneProject 10-12 FriendFace";
+			sourceTree = "<group>";
+		};
+		8DAEEB0B2A0BBC460080CDBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DAEEB0C2A0BBC590080CDBC /* UserModel.swift */,
+				8DAEEB0E2A0BBC670080CDBC /* FriendModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8DD2E87B2A0817FF000A7338 /* Project_11_Bookworm */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,6 +546,9 @@
 			dependencies = (
 			);
 			name = 100DaysOfSwiftUI;
+			packageProductDependencies = (
+				8DAEEB172A0BF80E0080CDBC /* WrappingHStack */,
+			);
 			productName = 100DaysOfSwiftUI;
 			productReference = 8D6D3E6B29FE76A60055BCCE /* 100DaysOfSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -544,6 +577,9 @@
 				Base,
 			);
 			mainGroup = 8D6D3E6229FE76A60055BCCE;
+			packageReferences = (
+				8DAEEB162A0BF80E0080CDBC /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 8D6D3E6C29FE76A60055BCCE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -616,8 +652,11 @@
 				8D6D3E9B29FE8A0E0055BCCE /* Animation.swift in Sources */,
 				8D211ED329FF0B550099503F /* Edutainment.swift in Sources */,
 				8D69B7112A03E15E0070D285 /* KeyboardView.swift in Sources */,
+				8DAEEB0A2A0BBB060080CDBC /* FriendFace.swift in Sources */,
+				8DAEEB0D2A0BBC590080CDBC /* UserModel.swift in Sources */,
 				8DD2E87D2A081824000A7338 /* Bookworm.swift in Sources */,
 				8D6D3EA629FE8BDF0055BCCE /* ExpenseSection.swift in Sources */,
+				8DAEEB152A0BD0BC0080CDBC /* FriendFaceDetailView.swift in Sources */,
 				8DAEEB032A0BAC370080CDBC /* Singer+CoreDataClass.swift in Sources */,
 				8DD2E8822A0933AE000A7338 /* DataController.swift in Sources */,
 				8D6D3EC029FE8E130055BCCE /* Moonshot.swift in Sources */,
@@ -625,6 +664,7 @@
 				8D6D3E9529FE870E0055BCCE /* SleepCalculator.mlmodel in Sources */,
 				8D211ED929FF0BEE0099503F /* HabitTracking.swift in Sources */,
 				8D211EE72A03C6770099503F /* PlayScreenView.swift in Sources */,
+				8DAEEB0F2A0BBC670080CDBC /* FriendModel.swift in Sources */,
 				8DAEEAF62A0AC92A0080CDBC /* Country+CoreDataClass.swift in Sources */,
 				8D0C0BD12A07D719008BD16A /* AddressView.swift in Sources */,
 				8D6D3ECE29FEA2090055BCCE /* CupcakeCorner.swift in Sources */,
@@ -835,6 +875,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8DAEEB162A0BF80E0080CDBC /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8DAEEB172A0BF80E0080CDBC /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DAEEB162A0BF80E0080CDBC /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8D25506B2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld */ = {

@@ -26,7 +26,8 @@ struct ContentView: View {
     let milestone: [AnyView] = [
         AnyView(RockPaperAndScissor()),
         AnyView(Edutainment()),
-        AnyView(HabitTracking())
+        AnyView(HabitTracking()),
+        AnyView(FriendFace())
     ]
     
     var body: some View {

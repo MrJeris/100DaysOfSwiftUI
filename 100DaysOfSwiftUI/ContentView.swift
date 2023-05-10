@@ -19,7 +19,8 @@ struct ContentView: View {
         AnyView(Moonshot(astronauts: Bundle.main.decode("astronauts.json"), missions: Bundle.main.decode("missions.json"))),
         AnyView(Drawing()),
         AnyView(CupcakeCorner()),
-        AnyView(Bookworm())
+        AnyView(Bookworm()),
+        AnyView(CoreDataProject())
     ]
     
     let milestone: [AnyView] = [

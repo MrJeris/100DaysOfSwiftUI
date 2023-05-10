@@ -21,6 +21,9 @@
 		8D211EE32A0164240099503F /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D211EE22A0164240099503F /* HabitDetailView.swift */; };
 		8D211EE52A03C64B0099503F /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D211EE42A03C64B0099503F /* MainScreenView.swift */; };
 		8D211EE72A03C6770099503F /* PlayScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D211EE62A03C6770099503F /* PlayScreenView.swift */; };
+		8D25506A2A0A608500C34ACF /* DataController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2550692A0A608500C34ACF /* DataController1.swift */; };
+		8D25506D2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D25506B2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld */; };
+		8D25506F2A0A62DA00C34ACF /* CoreDataProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25506E2A0A62DA00C34ACF /* CoreDataProject.swift */; };
 		8D69B7112A03E15E0070D285 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7102A03E15E0070D285 /* KeyboardView.swift */; };
 		8D69B7152A03F6B30070D285 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7142A03F6B30070D285 /* QuestionViewModel.swift */; };
 		8D69B7172A040B7C0070D285 /* PlayScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7162A040B7C0070D285 /* PlayScreenViewModel.swift */; };
@@ -57,6 +60,13 @@
 		8D6D3ECA29FE92BE0055BCCE /* RockPaperAndScissor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D3EC929FE92BE0055BCCE /* RockPaperAndScissor.swift */; };
 		8D6D3ECC29FE9C3A0055BCCE /* FlagImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D3ECB29FE9C3A0055BCCE /* FlagImage.swift */; };
 		8D6D3ECE29FEA2090055BCCE /* CupcakeCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D3ECD29FEA2090055BCCE /* CupcakeCorner.swift */; };
+		8DAEEAF42A0AC92A0080CDBC /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAF02A0AC92A0080CDBC /* Candy+CoreDataClass.swift */; };
+		8DAEEAF52A0AC92A0080CDBC /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAF12A0AC92A0080CDBC /* Candy+CoreDataProperties.swift */; };
+		8DAEEAF62A0AC92A0080CDBC /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAF22A0AC92A0080CDBC /* Country+CoreDataClass.swift */; };
+		8DAEEAF72A0AC92A0080CDBC /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAF32A0AC92A0080CDBC /* Country+CoreDataProperties.swift */; };
+		8DAEEAF92A0BAB970080CDBC /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEAF82A0BAB970080CDBC /* FilteredList.swift */; };
+		8DAEEB032A0BAC370080CDBC /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB012A0BAC370080CDBC /* Singer+CoreDataClass.swift */; };
+		8DAEEB042A0BAC370080CDBC /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEEB022A0BAC370080CDBC /* Singer+CoreDataProperties.swift */; };
 		8DD2E87D2A081824000A7338 /* Bookworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E87C2A081824000A7338 /* Bookworm.swift */; };
 		8DD2E8822A0933AE000A7338 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E8812A0933AE000A7338 /* DataController.swift */; };
 		8DD2E8882A09555C000A7338 /* BookwormData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E8862A09555C000A7338 /* BookwormData.xcdatamodeld */; };
@@ -81,6 +91,9 @@
 		8D211EE22A0164240099503F /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
 		8D211EE42A03C64B0099503F /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		8D211EE62A03C6770099503F /* PlayScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenView.swift; sourceTree = "<group>"; };
+		8D2550692A0A608500C34ACF /* DataController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController1.swift; path = 100DaysOfSwiftUI/Project_11_Bookworm/DataController1.swift; sourceTree = SOURCE_ROOT; };
+		8D25506C2A0A60C300C34ACF /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		8D25506E2A0A62DA00C34ACF /* CoreDataProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProject.swift; sourceTree = "<group>"; };
 		8D69B7102A03E15E0070D285 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		8D69B7142A03F6B30070D285 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		8D69B7162A040B7C0070D285 /* PlayScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenViewModel.swift; sourceTree = "<group>"; };
@@ -118,6 +131,15 @@
 		8D6D3EC929FE92BE0055BCCE /* RockPaperAndScissor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperAndScissor.swift; sourceTree = "<group>"; };
 		8D6D3ECB29FE9C3A0055BCCE /* FlagImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagImage.swift; sourceTree = "<group>"; };
 		8D6D3ECD29FEA2090055BCCE /* CupcakeCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCorner.swift; sourceTree = "<group>"; };
+		8DAEEAF02A0AC92A0080CDBC /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Candy+CoreDataClass.swift"; path = "100DaysOfSwiftUI/Project_12_CoreDataProject/NSManagedObject_Subclasses/Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8DAEEAF12A0AC92A0080CDBC /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Candy+CoreDataProperties.swift"; path = "100DaysOfSwiftUI/Project_12_CoreDataProject/NSManagedObject_Subclasses/Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		8DAEEAF22A0AC92A0080CDBC /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Country+CoreDataClass.swift"; path = "100DaysOfSwiftUI/Project_12_CoreDataProject/NSManagedObject_Subclasses/Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8DAEEAF32A0AC92A0080CDBC /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Country+CoreDataProperties.swift"; path = "100DaysOfSwiftUI/Project_12_CoreDataProject/NSManagedObject_Subclasses/Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		8DAEEAF82A0BAB970080CDBC /* FilteredList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilteredList.swift; path = ../../../../Downloads/HackingWithSwift/SwiftUI/project12/Project12/FilteredList.swift; sourceTree = "<group>"; };
+		8DAEEAFF2A0BABF00080CDBC /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8DAEEB002A0BABF00080CDBC /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8DAEEB012A0BAC370080CDBC /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8DAEEB022A0BAC370080CDBC /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8DD2E87C2A081824000A7338 /* Bookworm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookworm.swift; sourceTree = "<group>"; };
 		8DD2E8812A0933AE000A7338 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		8DD2E8872A09555C000A7338 /* BookwormData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookwormData.xcdatamodel; sourceTree = "<group>"; };
@@ -183,6 +205,18 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		8D2550682A0A5FA000C34ACF /* Project_12_CoreDataProject */ = {
+			isa = PBXGroup;
+			children = (
+				8DAEEAFE2A0BABCC0080CDBC /* NSManagedObject_Subclasses */,
+				8DAEEAF82A0BAB970080CDBC /* FilteredList.swift */,
+				8D25506E2A0A62DA00C34ACF /* CoreDataProject.swift */,
+				8D2550692A0A608500C34ACF /* DataController1.swift */,
+				8D25506B2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld */,
+			);
+			path = Project_12_CoreDataProject;
+			sourceTree = "<group>";
+		};
 		8D6D3E6229FE76A60055BCCE = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +239,7 @@
 				8D6D3E8729FE76CA0055BCCE /* MilestoneProject 7-9 Habit-Tracking */,
 				8D6D3E8629FE76C80055BCCE /* MilestoneProject 4-6 Edutainment */,
 				8D6D3E8529FE76C70055BCCE /* MilestoneProject 1-3 RockPaperAndScissor */,
+				8D2550682A0A5FA000C34ACF /* Project_12_CoreDataProject */,
 				8DD2E87B2A0817FF000A7338 /* Project_11_Bookworm */,
 				8D6D3E8829FE76CC0055BCCE /* Project_10_CupcakeCorner */,
 				8D6D3E8429FE76C60055BCCE /* Project_9_Drawing */,
@@ -436,15 +471,30 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		8DAEEAFE2A0BABCC0080CDBC /* NSManagedObject_Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				8DAEEAF02A0AC92A0080CDBC /* Candy+CoreDataClass.swift */,
+				8DAEEAF12A0AC92A0080CDBC /* Candy+CoreDataProperties.swift */,
+				8DAEEAF22A0AC92A0080CDBC /* Country+CoreDataClass.swift */,
+				8DAEEAF32A0AC92A0080CDBC /* Country+CoreDataProperties.swift */,
+				8DAEEAFF2A0BABF00080CDBC /* Movie+CoreDataClass.swift */,
+				8DAEEB002A0BABF00080CDBC /* Movie+CoreDataProperties.swift */,
+				8DAEEB012A0BAC370080CDBC /* Singer+CoreDataClass.swift */,
+				8DAEEB022A0BAC370080CDBC /* Singer+CoreDataProperties.swift */,
+			);
+			path = NSManagedObject_Subclasses;
+			sourceTree = "<group>";
+		};
 		8DD2E87B2A0817FF000A7338 /* Project_11_Bookworm */ = {
 			isa = PBXGroup;
 			children = (
 				8DD2E88B2A095EA5000A7338 /* RatingView.swift */,
 				8DD2E88D2A0960B1000A7338 /* EmojiRatingView.swift */,
 				8DD2E8892A09562C000A7338 /* AddBookView.swift */,
-				8DD2E88F2A09632E000A7338 /* DetailView.swift */,
 				8DD2E87C2A081824000A7338 /* Bookworm.swift */,
 				8DD2E8812A0933AE000A7338 /* DataController.swift */,
+				8DD2E88F2A09632E000A7338 /* DetailView.swift */,
 				8DD2E8862A09555C000A7338 /* BookwormData.xcdatamodeld */,
 			);
 			path = Project_11_Bookworm;
@@ -533,11 +583,14 @@
 				8D6D3E9329FE87040055BCCE /* BetterRest.swift in Sources */,
 				8D6D3EA029FE8BB70055BCCE /* AddView.swift in Sources */,
 				8D211EDD29FF0D260099503F /* HabitListView.swift in Sources */,
+				8DAEEAF92A0BAB970080CDBC /* FilteredList.swift in Sources */,
 				8D6D3E9929FE88C80055BCCE /* WordScramble.swift in Sources */,
 				8D6D3E7129FE76A60055BCCE /* ContentView.swift in Sources */,
+				8DAEEAF52A0AC92A0080CDBC /* Candy+CoreDataProperties.swift in Sources */,
 				8D6D3EBA29FE8DC50055BCCE /* Mission.swift in Sources */,
 				8DD2E8882A09555C000A7338 /* BookwormData.xcdatamodeld in Sources */,
 				8DD2E88C2A095EA5000A7338 /* RatingView.swift in Sources */,
+				8D25506F2A0A62DA00C34ACF /* CoreDataProject.swift in Sources */,
 				8D6D3EB829FE8DBA0055BCCE /* Astronaut.swift in Sources */,
 				8D6D3E8D29FE76D00055BCCE /* WeSplit.swift in Sources */,
 				8D6D3EA829FE8BFB0055BCCE /* iExpenseView.swift in Sources */,
@@ -547,13 +600,17 @@
 				8D6D3E6F29FE76A60055BCCE /* _00DaysOfSwiftUIApp.swift in Sources */,
 				8D6D3EC429FE8EB10055BCCE /* ViewDivider.swift in Sources */,
 				8D211EE12A0160AE0099503F /* HabitCreateView.swift in Sources */,
+				8DAEEB042A0BAC370080CDBC /* Singer+CoreDataProperties.swift in Sources */,
 				8D6D3EA229FE8BC70055BCCE /* ExpenseItem.swift in Sources */,
+				8D25506D2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld in Sources */,
+				8DAEEAF42A0AC92A0080CDBC /* Candy+CoreDataClass.swift in Sources */,
 				8D0C0BD72A08111A008BD16A /* OrderProvider.swift in Sources */,
 				8D6D3EB229FE8D2B0055BCCE /* AstronautView.swift in Sources */,
 				8D211EE52A03C64B0099503F /* MainScreenView.swift in Sources */,
 				8D6D3ECA29FE92BE0055BCCE /* RockPaperAndScissor.swift in Sources */,
 				8D6D3E8F29FE76D00055BCCE /* GuessTheFlag.swift in Sources */,
 				8D69B7172A040B7C0070D285 /* PlayScreenViewModel.swift in Sources */,
+				8DAEEAF72A0AC92A0080CDBC /* Country+CoreDataProperties.swift in Sources */,
 				8D6D3EC629FE8F150055BCCE /* GridLayout.swift in Sources */,
 				8DD2E88E2A0960B1000A7338 /* EmojiRatingView.swift in Sources */,
 				8D6D3E9B29FE8A0E0055BCCE /* Animation.swift in Sources */,
@@ -561,12 +618,14 @@
 				8D69B7112A03E15E0070D285 /* KeyboardView.swift in Sources */,
 				8DD2E87D2A081824000A7338 /* Bookworm.swift in Sources */,
 				8D6D3EA629FE8BDF0055BCCE /* ExpenseSection.swift in Sources */,
+				8DAEEB032A0BAC370080CDBC /* Singer+CoreDataClass.swift in Sources */,
 				8DD2E8822A0933AE000A7338 /* DataController.swift in Sources */,
 				8D6D3EC029FE8E130055BCCE /* Moonshot.swift in Sources */,
 				8D6D3EC829FE91E50055BCCE /* Drawing.swift in Sources */,
 				8D6D3E9529FE870E0055BCCE /* SleepCalculator.mlmodel in Sources */,
 				8D211ED929FF0BEE0099503F /* HabitTracking.swift in Sources */,
 				8D211EE72A03C6770099503F /* PlayScreenView.swift in Sources */,
+				8DAEEAF62A0AC92A0080CDBC /* Country+CoreDataClass.swift in Sources */,
 				8D0C0BD12A07D719008BD16A /* AddressView.swift in Sources */,
 				8D6D3ECE29FEA2090055BCCE /* CupcakeCorner.swift in Sources */,
 				8D0C0BCF2A07D3FB008BD16A /* Order.swift in Sources */,
@@ -575,6 +634,7 @@
 				8D6D3EC229FE8E560055BCCE /* ListLayout.swift in Sources */,
 				8D6D3EBC29FE8DEB0055BCCE /* Bundle-Decodable.swift in Sources */,
 				8D6D3EBE29FE8DF30055BCCE /* Color-Theme.swift in Sources */,
+				8D25506A2A0A608500C34ACF /* DataController1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +837,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		8D25506B2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D25506C2A0A60C300C34ACF /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = 8D25506C2A0A60C300C34ACF /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		8DD2E8862A09555C000A7338 /* BookwormData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

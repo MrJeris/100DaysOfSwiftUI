@@ -30,9 +30,9 @@
 		8D27D5482A11425F00DD8EE9 /* CachedFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D5422A11425F00DD8EE9 /* CachedFriend+CoreDataProperties.swift */; };
 		8D27D5492A11425F00DD8EE9 /* CachedTag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D5432A11425F00DD8EE9 /* CachedTag+CoreDataClass.swift */; };
 		8D27D54A2A11425F00DD8EE9 /* CachedTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D5442A11425F00DD8EE9 /* CachedTag+CoreDataProperties.swift */; };
-		8D27D54C2A11432900DD8EE9 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D54B2A11432900DD8EE9 /* FilteredList.swift */; };
 		8D27D5502A11461100DD8EE9 /* -00DaysOfSwiftUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D27D54F2A11461100DD8EE9 /* -00DaysOfSwiftUI-Info.plist */; };
 		8D27D5522A1149A800DD8EE9 /* DataController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D5512A1149A800DD8EE9 /* DataController1.swift */; };
+		8D27D5542A114D7C00DD8EE9 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D5532A114D7C00DD8EE9 /* FilteredList.swift */; };
 		8D69B7112A03E15E0070D285 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7102A03E15E0070D285 /* KeyboardView.swift */; };
 		8D69B7152A03F6B30070D285 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7142A03F6B30070D285 /* QuestionViewModel.swift */; };
 		8D69B7172A040B7C0070D285 /* PlayScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7162A040B7C0070D285 /* PlayScreenViewModel.swift */; };
@@ -116,9 +116,9 @@
 		8D27D5422A11425F00DD8EE9 /* CachedFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8D27D5432A11425F00DD8EE9 /* CachedTag+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CachedTag+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8D27D5442A11425F00DD8EE9 /* CachedTag+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CachedTag+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8D27D54B2A11432900DD8EE9 /* FilteredList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilteredList.swift; path = ../../../../../Downloads/HackingWithSwift/SwiftUI/project12/Project12/FilteredList.swift; sourceTree = "<group>"; };
 		8D27D54F2A11461100DD8EE9 /* -00DaysOfSwiftUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "-00DaysOfSwiftUI-Info.plist"; sourceTree = "<group>"; };
 		8D27D5512A1149A800DD8EE9 /* DataController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController1.swift; sourceTree = "<group>"; };
+		8D27D5532A114D7C00DD8EE9 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 		8D69B7102A03E15E0070D285 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		8D69B7142A03F6B30070D285 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		8D69B7162A040B7C0070D285 /* PlayScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenViewModel.swift; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				8DAEEAFE2A0BABCC0080CDBC /* NSManagedObject_Subclasses */,
-				8D27D54B2A11432900DD8EE9 /* FilteredList.swift */,
+				8D27D5532A114D7C00DD8EE9 /* FilteredList.swift */,
 				8D25506E2A0A62DA00C34ACF /* CoreDataProject.swift */,
 				8D27D5512A1149A800DD8EE9 /* DataController1.swift */,
 				8D25506B2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld */,
@@ -704,7 +704,7 @@
 				8D69B7172A040B7C0070D285 /* PlayScreenViewModel.swift in Sources */,
 				8DAEEAF72A0AC92A0080CDBC /* Country+CoreDataProperties.swift in Sources */,
 				8D6D3EC629FE8F150055BCCE /* GridLayout.swift in Sources */,
-				8D27D54C2A11432900DD8EE9 /* FilteredList.swift in Sources */,
+				8D27D5542A114D7C00DD8EE9 /* FilteredList.swift in Sources */,
 				8DD2E88E2A0960B1000A7338 /* EmojiRatingView.swift in Sources */,
 				8D6D3E9B29FE8A0E0055BCCE /* Animation.swift in Sources */,
 				8D211ED329FF0B550099503F /* Edutainment.swift in Sources */,

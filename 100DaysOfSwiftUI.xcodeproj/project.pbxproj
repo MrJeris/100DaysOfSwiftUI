@@ -79,6 +79,16 @@
 		8DD2E88C2A095EA5000A7338 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E88B2A095EA5000A7338 /* RatingView.swift */; };
 		8DD2E88E2A0960B1000A7338 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E88D2A0960B1000A7338 /* EmojiRatingView.swift */; };
 		8DD2E8902A09632E000A7338 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2E88F2A09632E000A7338 /* DetailView.swift */; };
+		8DFCA7502A0ECE9600D86422 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA74E2A0ECE9600D86422 /* CoreData.xcdatamodeld */; };
+		8DFCA7532A0ED0CE00D86422 /* DataController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA7522A0ED0CE00D86422 /* DataController2.swift */; };
+		8DFCA7562A0ED1EA00D86422 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA7552A0ED1EA00D86422 /* TagModel.swift */; };
+		8DFCA75D2A0ED55000D86422 /* CachedFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA7572A0ED55000D86422 /* CachedFriend+CoreDataClass.swift */; };
+		8DFCA75E2A0ED55000D86422 /* CachedFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA7582A0ED55000D86422 /* CachedFriend+CoreDataProperties.swift */; };
+		8DFCA75F2A0ED55000D86422 /* CachedUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA7592A0ED55000D86422 /* CachedUser+CoreDataClass.swift */; };
+		8DFCA7602A0ED55000D86422 /* CachedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA75A2A0ED55000D86422 /* CachedUser+CoreDataProperties.swift */; };
+		8DFCA7612A0ED55000D86422 /* CachedTag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA75B2A0ED55000D86422 /* CachedTag+CoreDataClass.swift */; };
+		8DFCA7622A0ED55000D86422 /* CachedTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA75C2A0ED55000D86422 /* CachedTag+CoreDataProperties.swift */; };
+		8DFCA7642A0ED9A100D86422 /* FriendFaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCA7632A0ED9A100D86422 /* FriendFaceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +166,16 @@
 		8DD2E88B2A095EA5000A7338 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		8DD2E88D2A0960B1000A7338 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		8DD2E88F2A09632E000A7338 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8DFCA74F2A0ECE9600D86422 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		8DFCA7522A0ED0CE00D86422 /* DataController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController2.swift; sourceTree = "<group>"; };
+		8DFCA7552A0ED1EA00D86422 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
+		8DFCA7572A0ED55000D86422 /* CachedFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8DFCA7582A0ED55000D86422 /* CachedFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		8DFCA7592A0ED55000D86422 /* CachedUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8DFCA75A2A0ED55000D86422 /* CachedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		8DFCA75B2A0ED55000D86422 /* CachedTag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedTag+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8DFCA75C2A0ED55000D86422 /* CachedTag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedTag+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		8DFCA7632A0ED9A100D86422 /* FriendFaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,20 +520,20 @@
 		8DAEEB082A0BBABF0080CDBC /* MilestoneProject 10-12 FriendFace */ = {
 			isa = PBXGroup;
 			children = (
-				8DAEEB0B2A0BBC460080CDBC /* Models */,
-				8DAEEB142A0BD0BC0080CDBC /* FriendFaceDetailView.swift */,
-				8DAEEB092A0BBB060080CDBC /* FriendFace.swift */,
+				8DFCA7512A0ED08B00D86422 /* Data */,
+				8DFCA74D2A0EC9DD00D86422 /* View */,
 			);
 			path = "MilestoneProject 10-12 FriendFace";
 			sourceTree = "<group>";
 		};
-		8DAEEB0B2A0BBC460080CDBC /* Models */ = {
+		8DAEEB0B2A0BBC460080CDBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				8DAEEB0C2A0BBC590080CDBC /* UserModel.swift */,
 				8DAEEB0E2A0BBC670080CDBC /* FriendModel.swift */,
+				8DFCA7552A0ED1EA00D86422 /* TagModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8DD2E87B2A0817FF000A7338 /* Project_11_Bookworm */ = {
@@ -528,6 +548,40 @@
 				8DD2E8862A09555C000A7338 /* BookwormData.xcdatamodeld */,
 			);
 			path = Project_11_Bookworm;
+			sourceTree = "<group>";
+		};
+		8DFCA74D2A0EC9DD00D86422 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DAEEB142A0BD0BC0080CDBC /* FriendFaceDetailView.swift */,
+				8DAEEB092A0BBB060080CDBC /* FriendFace.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DFCA7512A0ED08B00D86422 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8DFCA7542A0ED18A00D86422 /* NSManagedObject_Subclasses */,
+				8DAEEB0B2A0BBC460080CDBC /* Model */,
+				8DFCA74E2A0ECE9600D86422 /* CoreData.xcdatamodeld */,
+				8DFCA7522A0ED0CE00D86422 /* DataController2.swift */,
+				8DFCA7632A0ED9A100D86422 /* FriendFaceManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8DFCA7542A0ED18A00D86422 /* NSManagedObject_Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				8DFCA7572A0ED55000D86422 /* CachedFriend+CoreDataClass.swift */,
+				8DFCA7582A0ED55000D86422 /* CachedFriend+CoreDataProperties.swift */,
+				8DFCA7592A0ED55000D86422 /* CachedUser+CoreDataClass.swift */,
+				8DFCA75A2A0ED55000D86422 /* CachedUser+CoreDataProperties.swift */,
+				8DFCA75B2A0ED55000D86422 /* CachedTag+CoreDataClass.swift */,
+				8DFCA75C2A0ED55000D86422 /* CachedTag+CoreDataProperties.swift */,
+			);
+			path = NSManagedObject_Subclasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -610,6 +664,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFCA7612A0ED55000D86422 /* CachedTag+CoreDataClass.swift in Sources */,
 				8D0C0BD32A07D845008BD16A /* CheckoutView.swift in Sources */,
 				8D6D3EA429FE8BD20055BCCE /* Expenses.swift in Sources */,
 				8D211EDB29FF0C520099503F /* HabitItem.swift in Sources */,
@@ -628,9 +683,11 @@
 				8DD2E88C2A095EA5000A7338 /* RatingView.swift in Sources */,
 				8D25506F2A0A62DA00C34ACF /* CoreDataProject.swift in Sources */,
 				8D6D3EB829FE8DBA0055BCCE /* Astronaut.swift in Sources */,
+				8DFCA75E2A0ED55000D86422 /* CachedFriend+CoreDataProperties.swift in Sources */,
 				8D6D3E8D29FE76D00055BCCE /* WeSplit.swift in Sources */,
 				8D6D3EA829FE8BFB0055BCCE /* iExpenseView.swift in Sources */,
 				8D211EDF29FF0DC90099503F /* HabitListViewModel.swift in Sources */,
+				8DFCA7562A0ED1EA00D86422 /* TagModel.swift in Sources */,
 				8D69B7152A03F6B30070D285 /* QuestionViewModel.swift in Sources */,
 				8DD2E8902A09632E000A7338 /* DetailView.swift in Sources */,
 				8D6D3E6F29FE76A60055BCCE /* _00DaysOfSwiftUIApp.swift in Sources */,
@@ -638,19 +695,23 @@
 				8D211EE12A0160AE0099503F /* HabitCreateView.swift in Sources */,
 				8DAEEB042A0BAC370080CDBC /* Singer+CoreDataProperties.swift in Sources */,
 				8D6D3EA229FE8BC70055BCCE /* ExpenseItem.swift in Sources */,
+				8DFCA7622A0ED55000D86422 /* CachedTag+CoreDataProperties.swift in Sources */,
 				8D25506D2A0A60C300C34ACF /* CoreDataProject.xcdatamodeld in Sources */,
 				8DAEEAF42A0AC92A0080CDBC /* Candy+CoreDataClass.swift in Sources */,
 				8D0C0BD72A08111A008BD16A /* OrderProvider.swift in Sources */,
 				8D6D3EB229FE8D2B0055BCCE /* AstronautView.swift in Sources */,
 				8D211EE52A03C64B0099503F /* MainScreenView.swift in Sources */,
 				8D6D3ECA29FE92BE0055BCCE /* RockPaperAndScissor.swift in Sources */,
+				8DFCA75D2A0ED55000D86422 /* CachedFriend+CoreDataClass.swift in Sources */,
 				8D6D3E8F29FE76D00055BCCE /* GuessTheFlag.swift in Sources */,
 				8D69B7172A040B7C0070D285 /* PlayScreenViewModel.swift in Sources */,
+				8DFCA75F2A0ED55000D86422 /* CachedUser+CoreDataClass.swift in Sources */,
 				8DAEEAF72A0AC92A0080CDBC /* Country+CoreDataProperties.swift in Sources */,
 				8D6D3EC629FE8F150055BCCE /* GridLayout.swift in Sources */,
 				8DD2E88E2A0960B1000A7338 /* EmojiRatingView.swift in Sources */,
 				8D6D3E9B29FE8A0E0055BCCE /* Animation.swift in Sources */,
 				8D211ED329FF0B550099503F /* Edutainment.swift in Sources */,
+				8DFCA7532A0ED0CE00D86422 /* DataController2.swift in Sources */,
 				8D69B7112A03E15E0070D285 /* KeyboardView.swift in Sources */,
 				8DAEEB0A2A0BBB060080CDBC /* FriendFace.swift in Sources */,
 				8DAEEB0D2A0BBC590080CDBC /* UserModel.swift in Sources */,
@@ -664,12 +725,15 @@
 				8D6D3E9529FE870E0055BCCE /* SleepCalculator.mlmodel in Sources */,
 				8D211ED929FF0BEE0099503F /* HabitTracking.swift in Sources */,
 				8D211EE72A03C6770099503F /* PlayScreenView.swift in Sources */,
+				8DFCA7502A0ECE9600D86422 /* CoreData.xcdatamodeld in Sources */,
 				8DAEEB0F2A0BBC670080CDBC /* FriendModel.swift in Sources */,
 				8DAEEAF62A0AC92A0080CDBC /* Country+CoreDataClass.swift in Sources */,
 				8D0C0BD12A07D719008BD16A /* AddressView.swift in Sources */,
 				8D6D3ECE29FEA2090055BCCE /* CupcakeCorner.swift in Sources */,
 				8D0C0BCF2A07D3FB008BD16A /* Order.swift in Sources */,
 				8DD2E88A2A09562C000A7338 /* AddBookView.swift in Sources */,
+				8DFCA7642A0ED9A100D86422 /* FriendFaceManager.swift in Sources */,
+				8DFCA7602A0ED55000D86422 /* CachedUser+CoreDataProperties.swift in Sources */,
 				8D6D3EB029FE8D1D0055BCCE /* MissionView.swift in Sources */,
 				8D6D3EC229FE8E560055BCCE /* ListLayout.swift in Sources */,
 				8D6D3EBC29FE8DEB0055BCCE /* Bundle-Decodable.swift in Sources */,
@@ -806,7 +870,7 @@
 				DEVELOPMENT_TEAM = Z58TCN89AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "-00DaysOfSwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -835,7 +899,7 @@
 				DEVELOPMENT_TEAM = Z58TCN89AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "-00DaysOfSwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -913,6 +977,16 @@
 			);
 			currentVersion = 8DD2E8872A09555C000A7338 /* BookwormData.xcdatamodel */;
 			path = BookwormData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		8DFCA74E2A0ECE9600D86422 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8DFCA74F2A0ECE9600D86422 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 8DFCA74F2A0ECE9600D86422 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

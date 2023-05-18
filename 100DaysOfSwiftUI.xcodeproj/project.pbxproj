@@ -33,6 +33,9 @@
 		8D27D5502A11461100DD8EE9 /* -00DaysOfSwiftUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D27D54F2A11461100DD8EE9 /* -00DaysOfSwiftUI-Info.plist */; };
 		8D27D5522A1149A800DD8EE9 /* DataController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D5512A1149A800DD8EE9 /* DataController1.swift */; };
 		8D27D5542A114D7C00DD8EE9 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27D5532A114D7C00DD8EE9 /* FilteredList.swift */; };
+		8D480FC82A12640400C8F165 /* InstafilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D480FC72A12640400C8F165 /* InstafilterView.swift */; };
+		8D480FCA2A12794600C8F165 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D480FC92A12794600C8F165 /* ImagePicker.swift */; };
+		8D480FCC2A1670FE00C8F165 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D480FCB2A1670FE00C8F165 /* ImageSaver.swift */; };
 		8D69B7112A03E15E0070D285 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7102A03E15E0070D285 /* KeyboardView.swift */; };
 		8D69B7152A03F6B30070D285 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7142A03F6B30070D285 /* QuestionViewModel.swift */; };
 		8D69B7172A040B7C0070D285 /* PlayScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69B7162A040B7C0070D285 /* PlayScreenViewModel.swift */; };
@@ -119,6 +122,9 @@
 		8D27D54F2A11461100DD8EE9 /* -00DaysOfSwiftUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "-00DaysOfSwiftUI-Info.plist"; sourceTree = "<group>"; };
 		8D27D5512A1149A800DD8EE9 /* DataController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController1.swift; sourceTree = "<group>"; };
 		8D27D5532A114D7C00DD8EE9 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		8D480FC72A12640400C8F165 /* InstafilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterView.swift; sourceTree = "<group>"; };
+		8D480FC92A12794600C8F165 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8D480FCB2A1670FE00C8F165 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		8D69B7102A03E15E0070D285 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		8D69B7142A03F6B30070D285 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		8D69B7162A040B7C0070D285 /* PlayScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenViewModel.swift; sourceTree = "<group>"; };
@@ -262,6 +268,16 @@
 			path = NSManagedObject_Subclasses;
 			sourceTree = "<group>";
 		};
+		8D27D5572A125EF300DD8EE9 /* Project_13_Instafilter */ = {
+			isa = PBXGroup;
+			children = (
+				8D480FC72A12640400C8F165 /* InstafilterView.swift */,
+				8D480FCB2A1670FE00C8F165 /* ImageSaver.swift */,
+				8D480FC92A12794600C8F165 /* ImagePicker.swift */,
+			);
+			path = Project_13_Instafilter;
+			sourceTree = "<group>";
+		};
 		8D6D3E6229FE76A60055BCCE = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +302,7 @@
 				8D6D3E8729FE76CA0055BCCE /* MilestoneProject 7-9 Habit-Tracking */,
 				8D6D3E8629FE76C80055BCCE /* MilestoneProject 4-6 Edutainment */,
 				8D6D3E8529FE76C70055BCCE /* MilestoneProject 1-3 RockPaperAndScissor */,
+				8D27D5572A125EF300DD8EE9 /* Project_13_Instafilter */,
 				8D2550682A0A5FA000C34ACF /* Project_12_CoreDataProject */,
 				8DD2E87B2A0817FF000A7338 /* Project_11_Bookworm */,
 				8D6D3E8829FE76CC0055BCCE /* Project_10_CupcakeCorner */,
@@ -700,6 +717,7 @@
 				8D6D3ECA29FE92BE0055BCCE /* RockPaperAndScissor.swift in Sources */,
 				8D27D5462A11425F00DD8EE9 /* CachedFriend+CoreDataClass.swift in Sources */,
 				8D6D3E8F29FE76D00055BCCE /* GuessTheFlag.swift in Sources */,
+				8D480FC82A12640400C8F165 /* InstafilterView.swift in Sources */,
 				8D27D5492A11425F00DD8EE9 /* CachedTag+CoreDataClass.swift in Sources */,
 				8D69B7172A040B7C0070D285 /* PlayScreenViewModel.swift in Sources */,
 				8DAEEAF72A0AC92A0080CDBC /* Country+CoreDataProperties.swift in Sources */,
@@ -708,6 +726,7 @@
 				8DD2E88E2A0960B1000A7338 /* EmojiRatingView.swift in Sources */,
 				8D6D3E9B29FE8A0E0055BCCE /* Animation.swift in Sources */,
 				8D211ED329FF0B550099503F /* Edutainment.swift in Sources */,
+				8D480FCC2A1670FE00C8F165 /* ImageSaver.swift in Sources */,
 				8DFCA7532A0ED0CE00D86422 /* DataController2.swift in Sources */,
 				8D27D53D2A11423800DD8EE9 /* FriendFaceManager.swift in Sources */,
 				8D69B7112A03E15E0070D285 /* KeyboardView.swift in Sources */,
@@ -732,6 +751,7 @@
 				8D0C0BCF2A07D3FB008BD16A /* Order.swift in Sources */,
 				8DD2E88A2A09562C000A7338 /* AddBookView.swift in Sources */,
 				8D6D3EB029FE8D1D0055BCCE /* MissionView.swift in Sources */,
+				8D480FCA2A12794600C8F165 /* ImagePicker.swift in Sources */,
 				8D6D3EC229FE8E560055BCCE /* ListLayout.swift in Sources */,
 				8D6D3EBC29FE8DEB0055BCCE /* Bundle-Decodable.swift in Sources */,
 				8D6D3EBE29FE8DF30055BCCE /* Color-Theme.swift in Sources */,
@@ -867,6 +887,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-00DaysOfSwiftUI-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -896,6 +917,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-00DaysOfSwiftUI-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtered photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

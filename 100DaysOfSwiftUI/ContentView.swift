@@ -20,7 +20,8 @@ struct ContentView: View {
         AnyView(Drawing()),
         AnyView(CupcakeCorner()),
         AnyView(Bookworm()),
-        AnyView(CoreDataProject())
+        AnyView(CoreDataProject()),
+        AnyView(InstafilterView())
     ]
     
     let milestone: [AnyView] = [
